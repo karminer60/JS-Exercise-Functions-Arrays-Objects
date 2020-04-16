@@ -58,7 +58,9 @@ function sayGoodbye(name) {
  * Hint 2: There is a very easy way to round numbers in JS. Do a google search to find out how. 
 */
 function temperatureCtoF(value) {
-  /* code here */
+  let result = Math.round(value*9/5 + 32)
+  
+  return result;
 }
 
 /**
