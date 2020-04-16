@@ -80,8 +80,15 @@ function temperatureCtoF(value) {
  * 
  * Hint: You can call your `temperatureCtoF` function from inside `temperatureInF`.
 */
-function temperatureInF(/* code here */) {
-  /* code here */
+function temperatureInF(value, unit) {
+  if(unit == 'F'){
+    return value+unit;  
+  } 
+
+  else if(unit=='C'){
+    let result = temperatureCtoF(value);
+    return result + 'F';
+  }
 }
 
 
