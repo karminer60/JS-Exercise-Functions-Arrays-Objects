@@ -277,7 +277,7 @@ function getLastCarInfo(array) {
 */
 function getModelYears(array) {
   let newArray= []
-  for( let i=0; i < array; i++){
+  for( let i=0; i < array.length; i++){
     let carYear = array[i].car_year;
     newArray.push(carYear)
   }
