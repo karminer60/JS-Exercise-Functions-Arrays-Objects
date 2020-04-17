@@ -151,8 +151,12 @@ function getName(component) {
  * passing in [ 'orange', 'grape', 'apple', 'banana', 'mango' ] as the argument,
  * the returned value should be: 2.
 */
-function appleIndex(/* code here */) {
-  /* code here */
+function appleIndex(stringsArray) {
+  for(let i=0; i<= stringsArray.length; i++){
+    if (stringsArray[i] == 'apple'){
+      return i;
+    }
+  }
 }
 
 /**
