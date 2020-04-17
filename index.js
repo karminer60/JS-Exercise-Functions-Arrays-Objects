@@ -242,7 +242,10 @@ function get3rdCar(inventory) {
  * it will return `This is a Lincoln Navigator`.
 */
 function getCarInfoByIndex(inventory, index) {
-  /* code here */
+  
+  let carMake = inventory[index].car_make;
+  let carModel = inventory[index].car_model;
+  return `This is a` + carMake + carModel;
 }
 
 /**
@@ -256,8 +259,11 @@ function getCarInfoByIndex(inventory, index) {
  * For example, if getLastCarInfo is invoked passing the inventory inside /data/inventory.js,
  * it will return `This is a Lincoln Town Car`.
 */
-function getLastCarInfo(/* code here */) {
-  /* code here */
+function getLastCarInfo(array) {
+  let index = array.length - 1;
+  let lastItemMake = array[index].car_make;
+  let lastItemModel = array[index].car_model;
+  return `This is a` + lastItemMake + lastItemModel;
 }
 
 /**
@@ -269,8 +275,13 @@ function getLastCarInfo(/* code here */) {
  *     (1) an array which is an inventory of cars like the one inside /data/inventory.js.
  * getModelYears returns an array containing all the 'car_year's in the inventory.
 */
-function getModelYears(/* code here */) {
-  /* code here */
+function getModelYears(array) {
+  let newArray= []
+  for( let i=0; i < array; i++){
+    let carYear = array[i].car_year;
+    newArray.push(carYear)
+  }
+  return newArray;
 }
 
 /**
